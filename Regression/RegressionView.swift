@@ -80,7 +80,6 @@ class RegressionView: UIView
 	
 	private func setup() {
 		self.clipsToBounds = true
-		self.backgroundColor = .whiteColor()
 		self.layer.cornerRadius = 4.0
 		
 		let tap = UITapGestureRecognizer(target: self, action: #selector(RegressionView.tapped(_:)))
