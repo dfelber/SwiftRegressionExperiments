@@ -16,6 +16,8 @@
 		6A17F3C01CE9C795001364BE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17F3BF1CE9C795001364BE /* Helper.swift */; };
 		6A17F3C21CE9C87E001364BE /* Matrix+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17F3C11CE9C87E001364BE /* Matrix+Description.swift */; };
 		6A17F3C41CE9C893001364BE /* Matrix+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17F3C31CE9C893001364BE /* Matrix+Append.swift */; };
+		6A46FDD31CED02D700783E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46FDD21CED02D700783E64 /* ViewController.swift */; };
+		6ADE0DBC1CE9E210006ED699 /* RegressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADE0DBB1CE9E210006ED699 /* RegressionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6A17F3BF1CE9C795001364BE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		6A17F3C11CE9C87E001364BE /* Matrix+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Matrix+Description.swift"; sourceTree = "<group>"; };
 		6A17F3C31CE9C893001364BE /* Matrix+Append.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Matrix+Append.swift"; sourceTree = "<group>"; };
+		6A46FDD21CED02D700783E64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6ADE0DBB1CE9E210006ED699 /* RegressionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegressionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				6A17F3C11CE9C87E001364BE /* Matrix+Description.swift */,
 				6A17F3BF1CE9C795001364BE /* Helper.swift */,
 				6A17F3BB1CE8EE0E001364BE /* Regression.swift */,
+				6ADE0DBB1CE9E210006ED699 /* RegressionView.swift */,
+				6A46FDD21CED02D700783E64 /* ViewController.swift */,
 				6A17F3A71CE8EDFA001364BE /* AppDelegate.swift */,
 				6A17F3AB1CE8EDFA001364BE /* Main.storyboard */,
 				6A17F3AE1CE8EDFA001364BE /* Assets.xcassets */,
@@ -153,6 +159,8 @@
 				6A17F3C01CE9C795001364BE /* Helper.swift in Sources */,
 				6A17F3C21CE9C87E001364BE /* Matrix+Description.swift in Sources */,
 				6A17F3BA1CE8EE04001364BE /* Matrix.swift in Sources */,
+				6A46FDD31CED02D700783E64 /* ViewController.swift in Sources */,
+				6ADE0DBC1CE9E210006ED699 /* RegressionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

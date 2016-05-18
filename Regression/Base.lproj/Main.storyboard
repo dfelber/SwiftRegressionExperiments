@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Regression" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +17,152 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-1k-ITN" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="20" y="30" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.050219010659075795" green="0.91676018646408841" blue="0.0021613236821234213" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.050219010660000001" green="0.91676018650000002" blue="0.002161323682" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYf-i7-XFJ" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="310" y="30" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.99561536312103271" green="0.78495264053344727" blue="0.037173375487327576" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.99561536309999998" green="0.78495264050000002" blue="0.03717337549" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcQ-ni-a7g" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="20" y="220" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.9865337610244751" green="0.11447817087173462" blue="0.027901537716388702" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.98653376100000001" green="0.1144781709" blue="0.027901537720000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otA-c8-pW8" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="20" y="410" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.051298610866069794" green="0.31356179714202881" blue="0.99279463291168213" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.051298610869999997" green="0.31356179709999998" blue="0.99279463290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q87-Uh-gLv" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="310" y="220" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.12938384711742401" green="1" blue="0.98856359720230103" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.1293838471" green="1" blue="0.98856359719999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-1H-WKj" customClass="RegressionView" customModule="Regression" customModuleProvider="target">
+                                <rect key="frame" x="310" y="410" width="270" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="regressionDegree">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.98012065887451172" green="0.0" blue="0.54927295446395874" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.9801206589" green="0.0" blue="0.54927295450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91676018646408841" green="0.91676018646408841" blue="0.91676018646408841" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fFC-1k-ITN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="1eu-Tp-Gl2"/>
+                            <constraint firstItem="CcQ-ni-a7g" firstAttribute="height" secondItem="fFC-1k-ITN" secondAttribute="height" id="59Q-Qf-QgH"/>
+                            <constraint firstItem="q87-Uh-gLv" firstAttribute="leading" secondItem="CcQ-ni-a7g" secondAttribute="trailing" constant="20" id="5ZP-6o-1Ua"/>
+                            <constraint firstItem="OYf-i7-XFJ" firstAttribute="width" secondItem="fFC-1k-ITN" secondAttribute="width" id="7ky-M9-2xq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q87-Uh-gLv" secondAttribute="trailing" id="DbQ-Fl-wLU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OYf-i7-XFJ" secondAttribute="trailing" id="E5B-Ue-urI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ChL-1H-WKj" secondAttribute="bottom" constant="20" id="F4u-hc-oxV"/>
+                            <constraint firstItem="otA-c8-pW8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HCs-q5-jOc"/>
+                            <constraint firstItem="OYf-i7-XFJ" firstAttribute="leading" secondItem="fFC-1k-ITN" secondAttribute="trailing" constant="20" id="NKm-tP-xkq"/>
+                            <constraint firstItem="q87-Uh-gLv" firstAttribute="height" secondItem="OYf-i7-XFJ" secondAttribute="height" id="Nb8-Da-9dv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="otA-c8-pW8" secondAttribute="bottom" constant="20" id="PB2-PQ-W3n"/>
+                            <constraint firstItem="ChL-1H-WKj" firstAttribute="leading" secondItem="otA-c8-pW8" secondAttribute="trailing" constant="20" id="Ska-sa-ra5"/>
+                            <constraint firstItem="fFC-1k-ITN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TgZ-CG-wlK"/>
+                            <constraint firstItem="q87-Uh-gLv" firstAttribute="width" secondItem="CcQ-ni-a7g" secondAttribute="width" id="UD8-az-PRw"/>
+                            <constraint firstItem="OYf-i7-XFJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="UEM-EH-W6I"/>
+                            <constraint firstItem="ChL-1H-WKj" firstAttribute="height" secondItem="q87-Uh-gLv" secondAttribute="height" id="XOG-ex-d2i"/>
+                            <constraint firstItem="ChL-1H-WKj" firstAttribute="width" secondItem="otA-c8-pW8" secondAttribute="width" id="XUz-NL-CLt"/>
+                            <constraint firstItem="otA-c8-pW8" firstAttribute="height" secondItem="CcQ-ni-a7g" secondAttribute="height" id="cVa-Vg-I2A"/>
+                            <constraint firstItem="CcQ-ni-a7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ccU-04-Sf8"/>
+                            <constraint firstItem="ChL-1H-WKj" firstAttribute="top" secondItem="q87-Uh-gLv" secondAttribute="bottom" constant="20" id="sMT-kA-l1n"/>
+                            <constraint firstItem="otA-c8-pW8" firstAttribute="top" secondItem="CcQ-ni-a7g" secondAttribute="bottom" constant="20" id="shs-1P-aMe"/>
+                            <constraint firstItem="q87-Uh-gLv" firstAttribute="top" secondItem="OYf-i7-XFJ" secondAttribute="bottom" constant="20" id="svL-Zm-xBx"/>
+                            <constraint firstItem="CcQ-ni-a7g" firstAttribute="top" secondItem="fFC-1k-ITN" secondAttribute="bottom" constant="20" id="ta4-8m-ESb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ChL-1H-WKj" secondAttribute="trailing" id="tpz-fg-OcP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="regressionViewOrder1" destination="fFC-1k-ITN" id="ONH-en-wlL"/>
+                        <outlet property="regressionViewOrder2" destination="OYf-i7-XFJ" id="77H-Qh-Q8X"/>
+                        <outlet property="regressionViewOrder3" destination="CcQ-ni-a7g" id="ReQ-pf-x4N"/>
+                        <outlet property="regressionViewOrder4" destination="q87-Uh-gLv" id="eBn-cl-KB4"/>
+                        <outlet property="regressionViewOrder5" destination="otA-c8-pW8" id="PdM-cL-zrF"/>
+                        <outlet property="regressionViewOrder6" destination="ChL-1H-WKj" id="uCd-wn-JjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
