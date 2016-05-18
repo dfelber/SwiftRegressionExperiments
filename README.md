@@ -1,2 +1,3 @@
 # SwiftRegressionExperiments
-Some with experiments with polynomial regression.
+Some experiments with polynomial regression using the Accelerate Framework.
+![Screenshot](images/screenshot.png)
