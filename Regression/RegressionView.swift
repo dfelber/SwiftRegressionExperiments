@@ -88,7 +88,7 @@ class RegressionView: UIView
     
     
     private func redraw() {
-        guard points.count > 0 else {
+        guard points.count > 1 else {
             return
         }
         
