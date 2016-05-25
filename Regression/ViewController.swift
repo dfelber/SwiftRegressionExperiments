@@ -17,6 +17,32 @@ class ViewController: UIViewController
     @IBOutlet var regressionViewOrder5: RegressionView!
     @IBOutlet var regressionViewOrder6: RegressionView!
     
+    var regressionViews: [RegressionView]?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let views = self.view.subviews.filter({ $0 is RegressionView })
+        regressionViews = views as? [RegressionView]
+        
+        guard let regressionViews = regressionViews else {
+            return
+        }
+        
+        for view in regressionViews {
+            view.pointWasAddedCallback = { (newPoint, sender) in
+                for otherView in regressionViews {
+                    guard otherView != view else {
+                        continue
+                    }
+                    
+                    otherView.addPoint(newPoint)
+                }
+            }
+        }
+    }
+    
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {

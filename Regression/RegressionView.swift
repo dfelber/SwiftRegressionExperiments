@@ -40,6 +40,8 @@ class RegressionView: UIView
     private var reg: Regression?
     private var modelLine: CAShapeLayer?
     
+    var pointWasAddedCallback: ((newPoint: CGPoint, sender: RegressionView) -> Void)?
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -62,8 +64,13 @@ class RegressionView: UIView
     func addPoint(point: CGPoint) {
         points.append(point)
         self.layer.addSublayer(buildPoint(point))
-        
         redraw()
+    }
+    
+    
+    private func addPointToView(point: CGPoint) {
+        addPoint(point)
+        pointWasAddedCallback?(newPoint: point, sender: self)
     }
     
     
@@ -107,7 +114,7 @@ class RegressionView: UIView
         {
             case .Ended, .Changed:
                 let tapPositionOneFingerTap = sender.locationInView(self)
-                addPoint(tapPositionOneFingerTap)
+                addPointToView(tapPositionOneFingerTap)
             
             default: break
         }
